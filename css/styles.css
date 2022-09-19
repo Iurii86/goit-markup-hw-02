@@ -4,13 +4,16 @@
   --main-text-color: #757575;
   --typical-lh: 1.17;
   --main-font: "Roboto", sans-serif;
+  --main-background-color: #ffffff;
+  --second-background-color: #2f303a;
 }
 
 body {
   font-family: var(--main-font);
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
   color: var(--main-text-color);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .list {
@@ -39,7 +42,6 @@ body {
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
@@ -52,10 +54,9 @@ body {
 .header-mail,
 .header-tel {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--main-text-color);
 }
 
 .header-link:hover,
@@ -76,16 +77,16 @@ body {
 /*-------------- Hero ------------------*/
 
 .hero {
-  background: #2f303a;
+  background: var(--second-background-color);
 }
 
-.hero-title {
+.hero-title 
   font-weight: 900;
-  line-height: 1.36;
+  font-size: 44px;
+  line-height: 1,36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-size: 44px;
   color: var(--second-title-color);
 }
 
@@ -123,22 +124,16 @@ body {
 }
 
 .benefits-title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   color: var(--main-title-color);
 }
 .benefits-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /*------------------------ Activity----------------- */
 
-.activity-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: var(--typical-lh);
   color: var(--main-title-color);
@@ -150,13 +145,6 @@ body {
   background: #f5f4fa;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: var(--typical-lh);
-  color: var(--main-title-color);
-}
-
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -164,19 +152,18 @@ body {
   color: var(--main-title-color);
 }
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .team-item {
-  background: #ffffff;
+  background: var(--main-background-color);
 }
 
 /* --------------------Footer------------------ */
 
 .footer {
-  background: #2f303a;
+  background: var(--second-background-color);
 }
 
 .footer-accent {
@@ -185,8 +172,6 @@ body {
 
 .footer-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--second-title-color);
 }
@@ -194,15 +179,8 @@ body {
 .footer-mail,
 .footer-tel {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: #2196f3;
 }
 
 .footer-mail:hover,
@@ -231,14 +209,13 @@ body {
 
 .button:hover,
 .button:focus {
-  color: #ffffff;
+  color: var(--second-title-color);
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .features-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -246,8 +223,6 @@ body {
 }
 
 .features-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  color: var(--main-text-color);
+  line-height: 1.87;
 }
